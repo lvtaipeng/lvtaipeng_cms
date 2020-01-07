@@ -11,7 +11,7 @@ public interface BaseDao<T> {
 	/**
 	 * 按条件查询
 	 */
-	List<User> select(User user);
+	List<T> select(T t);
 	
 	/*
 	 * 
@@ -23,12 +23,12 @@ public interface BaseDao<T> {
 	/**
 	 * 新增
 	 */
-	int insert(User user);
+	int insert(T t);
 	
 	/**
 	 * 修改
 	 */
-	int update(User user);
+	int update(T t);
 	
 	/***
 	 * 删除

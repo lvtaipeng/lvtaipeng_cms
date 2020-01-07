@@ -149,6 +149,29 @@ public class User {
 				+ ", score=" + score + ", role=" + role + ", url=" + url + ", create_time=" + create_time
 				+ ", update_time=" + update_time + "]";
 	}
+
+	public User(Integer id, String username, String headimg, String password, String nickname, Date birthday,
+			Integer gender, Integer locked, Integer score, String role, String url, String create_time,
+			String update_time) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.headimg = headimg;
+		this.password = password;
+		this.nickname = nickname;
+		this.birthday = birthday;
+		this.gender = gender;
+		this.locked = locked;
+		this.score = score;
+		this.role = role;
+		this.url = url;
+		this.create_time = create_time;
+		this.update_time = update_time;
+	}
+
+	public User() {
+		super();
+	}
 	
 	
 }
