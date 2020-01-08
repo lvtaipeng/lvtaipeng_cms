@@ -1,4 +1,4 @@
-package com.lvtaipeng.pojo;
+package com.lvtaipeng.cms.pojo;
 
 public class VoteContent {
 

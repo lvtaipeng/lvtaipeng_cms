@@ -1,6 +1,6 @@
-package com.lvtaipeng.pojo;
+package com.lvtaipeng.cms.pojo;
 
-public class Collect {
+public class Link {
 
 	/**  **/
 	private Integer id;
@@ -10,8 +10,6 @@ public class Collect {
 	private String url;
 	/**  **/
 	private String created;
-	/**  **/
-	private Integer user_id;
 	public Integer getId() {
 		return id;
 	}
@@ -36,27 +34,19 @@ public class Collect {
 	public void setCreated(String created) {
 		this.created = created;
 	}
-	public Integer getUser_id() {
-		return user_id;
+	@Override
+	public String toString() {
+		return "Link [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + "]";
 	}
-	public void setUser_id(Integer user_id) {
-		this.user_id = user_id;
-	}
-	public Collect(Integer id, String text, String url, String created, Integer user_id) {
+	public Link(Integer id, String text, String url, String created) {
 		super();
 		this.id = id;
 		this.text = text;
 		this.url = url;
 		this.created = created;
-		this.user_id = user_id;
 	}
-	public Collect() {
+	public Link() {
 		super();
-	}
-	@Override
-	public String toString() {
-		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + ", user_id=" + user_id
-				+ "]";
 	}
 
 	

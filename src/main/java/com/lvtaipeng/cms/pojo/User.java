@@ -1,4 +1,4 @@
-package com.lvtaipeng.pojo;
+package com.lvtaipeng.cms.pojo;
 
 import java.util.Date;
 
